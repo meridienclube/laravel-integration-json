@@ -15,7 +15,7 @@ class IntegrationJsonServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->bind('JsonService', function () {
+        $this->app->bind('IntegrationJsonService', function () {
             return new JsonService();
         });
     }
